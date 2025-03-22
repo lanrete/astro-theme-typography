@@ -1,6 +1,10 @@
 ---
 title: 关于
-pubDate: 2024-12-06
+pubDate: 2025-03-22
 ---
 
-此主题系 Hexo 主题 <a href="https://github.com/sumimakito/hexo-theme-typography">活版印字</a> 在 Astro 平台上的移植版本
+Hi, Welcome.
+
+This is where I post my stuff on Internet.
+
+内心世界 means "inner space". Everyone deserve a inner place, this is mine.
