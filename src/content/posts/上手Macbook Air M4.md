@@ -10,6 +10,22 @@ slug: 'using-macbook-air-for-first-time'
 
 这篇文章会持续更新我的使用体验。
 
+## 更新
+
+### 还没有解决的
+
+1. 输入法
+1. 桌面到底在哪里啊
+1. 怎么输入`option`/`command`的图像
+
+### 已经解决的
+
+1. 如何在macos上截图
+
+    `shift+command+3` / `shift+command+4`将截图内容保存至桌面。
+
+    `control+shift+command+3` / `control+shift+command+4`截图到剪贴板。
+
 ## 第一印象
 
 确实很轻，体验感不错，但第一次用mac感觉很不习惯，这里列一些平时在windows下常用的操作：
