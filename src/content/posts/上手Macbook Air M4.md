@@ -17,6 +17,7 @@ slug: 'using-macbook-air-for-first-time'
 1. 输入法
 1. 桌面到底在哪里啊
 1. 怎么输入`option`/`command`的图像
+1. android/macos在同一局域网下的文件传输
 
 ### 已经解决的
 
