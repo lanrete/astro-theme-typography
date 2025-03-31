@@ -14,7 +14,6 @@ slug: 'using-macbook-air-for-first-time'
 
 ### 还没有解决的
 
-1. 输入法
 1. 桌面到底在哪里啊
 1. 怎么输入`option`/`command`的图像
 1. android/macos在同一局域网下的文件传输
@@ -26,6 +25,10 @@ slug: 'using-macbook-air-for-first-time'
     `shift+command+3` / `shift+command+4`将截图内容保存至桌面。
 
     `control+shift+command+3` / `control+shift+command+4`截图到剪贴板。
+    
+1. 输入法
+    
+    安装了`rime`和鼠须管，目前体验还可以，需要注意添加输入法的地方，有一点弯弯绕绕。
 
 ## 第一印象
 
