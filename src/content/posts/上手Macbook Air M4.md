@@ -59,3 +59,9 @@ slug: 'using-macbook-air-for-first-time'
 终端和shell： `zsh`是自带的，terminal尝试下`ghostty`。但我之前一直不知道terminal和shell两者到底是什么关系，借着用macos的机会可以好好搞清楚。
 
 轻度开发和编辑： `vscode`, `cursor`
+
+## 猪评
+
+猪猪说：「这是 ~~我~~ 狗子的macbook air m4」
+
+我：「本博客持续接收猪评投稿，会在必要的事实性检查后原样刊登。」
