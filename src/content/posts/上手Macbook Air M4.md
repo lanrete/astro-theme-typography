@@ -60,6 +60,8 @@ slug: 'using-macbook-air-for-first-time'
 
 轻度开发和编辑： `vscode`, `cursor`
 
+---
+
 ## 猪评
 
 猪猪说：「这是 ~~我~~ 狗子的macbook air m4」
