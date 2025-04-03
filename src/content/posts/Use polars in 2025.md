@@ -4,7 +4,7 @@ pubDate: 2025-04-01
 categories: ['Articles', 'python', 'pandas', 'polars', 'data-analytics']
 description: 'It is year 2025, stop using pandas and start embracing polars.'
 slug: 'use-polars-in-2025'
-draft: true
+draft: false
 ---
 
 `pandas` has served me very well in my data analytics career, it was, and still is the absolute powerhouse for (almost) every thing you need for day-to-day analytics. Even when it occasionally falls short on some advanced analytical workload, there's a huge ecosystem that you can easily plug into for just a bit more complexity like `scipy`, `numpy` and `scikit-learn`. 
