@@ -125,7 +125,7 @@ After saying so many good things about `polars`, I have to admit `polars` is not
 
 1. The type system is too strict sometimes.
 
-    I ran into this weird bug in my last project where I'm trying to make year-over-year comparision over same time period, for example to compare 2024-01-07~2024-01-15 to 2025-01-07~2025-01-15.
+    I ran into this weird bug in my last project where I'm trying to make year-over-year comparision over same time period, for example to compare Jan-14th to Feb-14th for both 2024 and 2025.
     
     My way around this is to create a helper numerical column using `date_helper=pl.col('event_date').dt.month * 100 + pl.col('event_date').dt.day`. By doing so I can simply do `filter(pl.col('date_helper') >= 107)` to filter both years data. (I'm sure there's a better way to do achieve the similar functionality, but this is how I do it)
     
