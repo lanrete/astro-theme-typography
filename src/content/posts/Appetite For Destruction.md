@@ -1,6 +1,6 @@
 ---
 title: Appetite For Destruction
-pubDate: 2025-03-30
+pubDate: 2025-04-10
 categories: ['Articles', '生活记录', '胡言乱语']
 description: '今天听「毁灭的欲望」'
 slug: 'appetite-for-destruction-and-nonsense'
@@ -141,3 +141,4 @@ Actually none of the hat I know will work on me, 但这其实也不是帽子的�
 > All I ever wanted
 > Was for you
 > To know that I care
+
