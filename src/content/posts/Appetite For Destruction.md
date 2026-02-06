@@ -119,7 +119,7 @@ Actually none of the hat I know will work on me, 但这其实也不是帽子的�
 > Standing on your own
 > It's such a lonely place for you
 > For you to be
-> 
+>
 > If you need a shoulder
 > Or if you need a friend
 > I'll be here standing
@@ -141,4 +141,3 @@ Actually none of the hat I know will work on me, 但这其实也不是帽子的�
 > All I ever wanted
 > Was for you
 > To know that I care
-

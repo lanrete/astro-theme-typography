@@ -2,7 +2,7 @@ import { glob } from 'astro/loaders'
 import { defineCollection, z } from 'astro:content'
 
 const posts = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/posts' }),
+  loader: glob({ pattern: ['*.{md,mdx}', '*/index.{md,mdx}'], base: './src/content/posts' }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -27,7 +27,19 @@ const spec = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/spec' }),
 })
 
+const photos = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/photos' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string().optional(),
+      image: image(),
+      date: z.coerce.date(),
+      description: z.string().optional(),
+    }),
+})
+
 export const collections = {
   posts,
   spec,
+  photos,
 }

@@ -16,10 +16,32 @@ export const userConfig: Partial<UserConfig> = {
       {
         name: 'rss',
         href: '/atom.xml',
-      }
-    ]
-    },
-analytics: {
+      },
+    ],
+    navLinks: [
+      {
+        name: 'Posts',
+        href: '/',
+      },
+      {
+        name: 'Archive',
+        href: '/archive',
+      },
+      {
+        name: 'Categories',
+        href: '/categories',
+      },
+      {
+        name: '照片',
+        href: '/photos',
+      },
+      {
+        name: 'About',
+        href: '/about',
+      },
+    ],
+  },
+  analytics: {
     googleAnalyticsId: 'G-HBNWHXK549',
   },
 }

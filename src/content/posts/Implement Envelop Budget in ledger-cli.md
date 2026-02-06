@@ -23,32 +23,32 @@ It's a really simple but time-tested method to manage your money, the idea is to
 
 To put it into an example, imagine you have a monthly income of 2,000 USD, based on your spending history, you might split the income into below envelopes:
 
-| Envelope | Amount |
-| -------- | ------ |
-| Rent | 700 |
-| Food | 500 |
-| Entertainment | 200 |
-| Purchase | 100 |
-| Bill | 100 |
-| Saving | 400 | 
+| Envelope      | Amount |
+| ------------- | ------ |
+| Rent          | 700    |
+| Food          | 500    |
+| Entertainment | 200    |
+| Purchase      | 100    |
+| Bill          | 100    |
+| Saving        | 400    |
 
-By assigning moneys into different envelope, you are essentially controlling the spending you can make in each category. 
+By assigning moneys into different envelope, you are essentially controlling the spending you can make in each category.
 By month end, you can review the remaining balance in each envelope and re-allocate them properly, some envelope like `Saving` and `Purchase` can have their balance carry-over to next month. For example, at month end:
 
-| Envelope | Month end balance | Reallocation | Final balance |
-| -------- | ------ | ----- | ------ |
-| Rent | 0 | Move to saving | 0 |
-| Food | 50 | Move to saving | 0 |
-| Entertainment | 100 | Move to saving | 0 |
-| Purchase | 150 | Carry-over | 150 |
-| Bill | 10 | Move to saving | 0 |
-| Saving | 400 | Carry-over | 560 |
+| Envelope      | Month end balance | Reallocation   | Final balance |
+| ------------- | ----------------- | -------------- | ------------- |
+| Rent          | 0                 | Move to saving | 0             |
+| Food          | 50                | Move to saving | 0             |
+| Entertainment | 100               | Move to saving | 0             |
+| Purchase      | 150               | Carry-over     | 150           |
+| Bill          | 10                | Move to saving | 0             |
+| Saving        | 400               | Carry-over     | 560           |
 
 In the examples above, `Food` envelope has 50 USD balance at month end, by moving it to `Saving` envelope, you are gradually accumulating your saving by planning and controlling your spending with envelope budget.
 
 ## Envelope Budget with Ledger Cli
 
-The example above is quite solid in 1980s when people use cash all the time, and the physcial actions of putting your money into different envelopes actually make sense. 
+The example above is quite solid in 1980s when people use cash all the time, and the physcial actions of putting your money into different envelopes actually make sense.
 But it's year 2025, your assets is most likely distributed across different banks and services like PayPal/AliPay. You will not actually put your money into different accounts and spend from those envelopes. So how do we implement the envelope budget method under modern day scenario?
 
 ### Virtual Transaction
@@ -140,7 +140,7 @@ Since this is a food expense, while realisticaly we are spending from our bank a
 ; main.ledger
 
 2025-03-21 * Dinner @Steakhouse
-    Expense:Food:Dinner    50 USD   
+    Expense:Food:Dinner    50 USD
     Asset:Cash:Bank       -50 USD
     [Asset:Cash:Bank]      50 USD
     [Budget:Food]         -50 USD
@@ -151,8 +151,8 @@ But the `[Asset:Cash:Bank]` line can be a bit unintuitive at first, but it's act
 
 1. Realistically, my money is still in the bank account.
 1. Virtually, all my money is distributed across different budget envelope.
-3. Whenever I make a spending, I need to first *virtually* put the money back from budget envelope to my back account
-4. Then I can make the real spending from my bank account.
+1. Whenever I make a spending, I need to first _virtually_ put the money back from budget envelope to my back account
+1. Then I can make the real spending from my bank account.
 
 My real spending (No. 4) is represented by the normal ledger record below.
 
@@ -181,7 +181,7 @@ ledger -f main.ledger bal ^Asset ^Budget -R
 ```
 
 ```sh
-ledger -f main.ledger bal ^Asset ^Budget 
+ledger -f main.ledger bal ^Asset ^Budget
 ```
 
 Without `-R`, `ledger` will include the virtual entries and show that my food budget has been deducted by 50 USD, with `-R`, `ledger` will exclude virtual entries and show that my bank balance has been deducted by 50 USD. Target achieved.
@@ -208,7 +208,7 @@ Just similar as whenever we spend money in certain expense, we need to virtaully
     [Asset:Cash:Bank]   (-1.0)
 ```
 
-While automated transation reduces a lots of the manual input, sometimes the transcation can be too complex where I actually want to manually do the budgeting, or it doesn't apply with the rules. I use tag to solve this. 
+While automated transation reduces a lots of the manual input, sometimes the transcation can be too complex where I actually want to manually do the budgeting, or it doesn't apply with the rules. I use tag to solve this.
 Specifically, for each transaction that I want to manually configure the budget, I add a `MANUAL` tag, and I modify may automated transactions like below:
 
 ```ledger

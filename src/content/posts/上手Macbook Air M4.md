@@ -22,30 +22,30 @@ slug: 'using-macbook-air-for-first-time'
 
 1. 如何在macos上截图
 
-    `shift+command+3` / `shift+command+4`将截图内容保存至桌面。
+   `shift+command+3` / `shift+command+4`将截图内容保存至桌面。
 
-    `control+shift+command+3` / `control+shift+command+4`截图到剪贴板。
-    
+   `control+shift+command+3` / `control+shift+command+4`截图到剪贴板。
+
 1. 输入法
-    
-    安装了`rime`和鼠须管，目前体验还可以，需要注意添加输入法的地方，有一点弯弯绕绕。
+
+   安装了`rime`和鼠须管，目前体验还可以，需要注意添加输入法的地方，有一点弯弯绕绕。
 
 ## 第一印象
 
 确实很轻，体验感不错，但第一次用mac感觉很不习惯，这里列一些平时在windows下常用的操作：
 
 1. `win`键打开开始菜单，输入应用名称快速启动
-    
-    目前看来，启动应用程序在下面的docker（？是这么叫么）中的launch pad，里面能找到所有安装的app。mac应该也有一些能够快速启动app的方式，需要研究一下`raycast`？
+
+   目前看来，启动应用程序在下面的docker（？是这么叫么）中的launch pad，里面能找到所有安装的app。mac应该也有一些能够快速启动app的方式，需要研究一下`raycast`？
 
 1. Capslock切换大小写
 
-    比起shift，我更常使用caps来输入大小写，mac上好像没有对应的按键？
+   比起shift，我更常使用caps来输入大小写，mac上好像没有对应的按键？
 
 1. 许多快捷键没有找到，需要一个shortcut cheatsheet.
 
-    记录下现在找到的一些快捷键，以及一些我觉得可能需要的快捷键
-    
+   记录下现在找到的一些快捷键，以及一些我觉得可能需要的快捷键
+
    1. 强制退出 `command+option+esc`
    1. 切换到桌面（windows下的`win+d`）
    1. 一键最大化（windows下的`win+up`)
